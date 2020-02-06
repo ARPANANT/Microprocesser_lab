@@ -40,7 +40,7 @@ void loop()
     digitalWrite(CLOCK_PIN,LOW);
   }
   digitalWrite(LATCH_PIN,HIGH);
-  delay(100);
+  delay(1000);
   digitalWrite(LATCH_PIN,LOW);
  }
 }

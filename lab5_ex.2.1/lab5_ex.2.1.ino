@@ -39,7 +39,7 @@ void setup()
   digitalWrite(7, LOW);
   
   Serial.begin(9600); 
-   Serial.println("start");
+  Serial.println("start");
   Rtc.Begin(); 
   RtcDateTime setting_time(2020,2,2,23,31,10); 
   // year, month, dayofMonth, hour, minute, second 
@@ -62,6 +62,7 @@ void loop()
   }
   else 
   {
+   digitalWrite(7,LOW);
    Serial.println("stop");
   }
   delay(1000); 

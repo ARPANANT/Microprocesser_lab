@@ -24,11 +24,11 @@ void printDateTime(const RtcDateTime& dt)
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-  display.print(dt.Year(),DEC);
+  display.print(dt.Day(), DEC);
   display.print('/');
   display.print(dt.Month(), DEC);
   display.print('/');
-  display.print(dt.Day(), DEC);
+  display.print(dt.Year(),DEC);
   display.print(' ');
   display.print(dt.Hour(), DEC);
   display.print(':');
@@ -42,7 +42,7 @@ void setup()
   Rtc.Begin();
   display.begin(SSD1306_SWITCHCAPVCC, 0x3c);
   display.clearDisplay();
-  RtcDateTime setting_time(2020,2,26,14,03,0);
+  RtcDateTime setting_time(2020,2,27,14,03,0);
   printDateTime(setting_time);
   Rtc.SetDateTime(setting_time);
 }

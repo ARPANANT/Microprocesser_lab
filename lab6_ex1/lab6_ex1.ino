@@ -28,9 +28,6 @@ void setup()
 void loop() 
 { 
   Serial.println(digitalRead(A0));
-  //display.clearDisplay();
-  //display.drawCircle(64,32,10,WHITE);
-  //display.display(); 
   if((digitalRead(A0)==LOW)&(digitalRead(A1)==LOW))
   {
     display.clearDisplay();
